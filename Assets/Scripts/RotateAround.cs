@@ -6,6 +6,7 @@ public class RotateAround : MonoBehaviour {
 
 	public Transform planetAroundRotate;
 	public float rotateAroundVelocity;
+	const float reduceVelocitys = 3;
 	// Use this for initialization
 	void Start () {
 		
@@ -13,8 +14,8 @@ public class RotateAround : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		transform.RotateAround (planetAroundRotate.position, Vector3.up, rotateAroundVelocity * Time.deltaTime);
-		transform.Rotate (Vector3.up, -(rotateAroundVelocity * Time.deltaTime));
+		transform.RotateAround (planetAroundRotate.position, Vector3.up, rotateAroundVelocity/reduceVelocitys * Time.deltaTime);
+		transform.Rotate (Vector3.up, -(rotateAroundVelocity/reduceVelocitys * Time.deltaTime));
 	}
 
 

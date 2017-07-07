@@ -203,6 +203,7 @@ GameObject:
   - component: {fileID: 135799243187035590}
   - component: {fileID: 23408637121950124}
   - component: {fileID: 108617931582089174}
+  - component: {fileID: 123857075192172912}
   m_Layer: 0
   m_Name: Sun
   m_TagString: Untagged
@@ -360,7 +361,7 @@ Transform:
   m_GameObject: {fileID: 1581929252089268}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 108, y: 108, z: 108}
+  m_LocalScale: {x: 60, y: 60, z: 60}
   m_Children: []
   m_Father: {fileID: 4204302022477766}
   m_RootOrder: 0
@@ -1299,7 +1300,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1892459924597196}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7db8b938ed59f6f4390072ee8bfc21ee, type: 3}
   m_Name: 
@@ -1511,7 +1512,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1892459924597196}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e7cea34ea1a277f49a9ea86c70767420, type: 3}
   m_Name: 
@@ -1542,6 +1543,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocity: 6
+--- !u!123 &123857075192172912
+LensFlare:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1581929252089268}
+  m_Enabled: 1
+  m_Flare: {fileID: 12100000, guid: 54fbbf098d116effa00081aba8ad6659, type: 2}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Brightness: 2.76
+  m_FadeSpeed: 1.65
+  m_IgnoreLayers:
+    serializedVersion: 2
+    m_Bits: 6
+  m_Directional: 0
 --- !u!124 &124527348565550420
 Behaviour:
   m_ObjectHideFlags: 1
@@ -1641,7 +1657,7 @@ SphereCollider:
   m_GameObject: {fileID: 1581929252089268}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
